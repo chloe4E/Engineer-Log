@@ -1,8 +1,8 @@
 # <Concept Name>
 
-**Domain:** <e.g. Networking / Distributed Systems / OS / Algorithms>  
-**Tags:** #<tag1>  
-**Last updated:** YYYY-MM-DD
+**Domain:** <e.g. Networking / Distributed Systems / OS / Algorithms>    <br>
+**Tags:** #<tag1>   <br>
+**Last updated:** YYYY-MM-DD  <br>
 
 ## What it is
 
