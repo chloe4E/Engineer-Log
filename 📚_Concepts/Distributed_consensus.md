@@ -26,7 +26,8 @@ One sentence.
     - request vote from other followers (send **`RequestVote` message**) 
   - A candidate becomes a leader once it reaches a quorum (majority) of votes from other nodes
   - randomized election timeout ensures not all nodes transition to candidate at the same time
-  - randomized election timeout ensures not all nodes transition to candidate at the same time
 
 ## gem 💡 Summary of Learnings
-Consensus: The ultimate tool for fault tolerance. While Paxos is the theoretical foundation, Raft is the pragmatic, leader-driven protocol used in modern infrastructure (like etcd, which powers Kubernetes) to keep machines in perfect agreement.
+**Consensus**: The ultimate tool for fault tolerance. While Paxos is the theoretical foundation, Raft is the pragmatic, leader-driven protocol used in modern infrastructure (like etcd, which powers Kubernetes) to keep machines in perfect agreement. <br>
+**Raft Elections**: Nodes transition from Follower $\rightarrow$ Candidate $\rightarrow$ Leader based on randomized election timeouts. Randomized timers prevent split votes, ensuring a quick quorum-based election. <br>
+**Terms as Clocks**: Raft uses "Terms" (monotonically increasing numbers) to detect and discard stale information from dead or isolated former leaders.
