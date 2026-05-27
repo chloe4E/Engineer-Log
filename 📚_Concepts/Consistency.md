@@ -1,7 +1,7 @@
 # Consistency
 
-**Domain:** Consistency <br> 
-**Tags:** #consistency  <br>
+**Domain:** Databases & Messaging | Consistency <br> 
+**Tags:** #consistency #Databases & #Messaging <br>
 **Last updated:** 2026-05-27 <br>
 
 ## What it is

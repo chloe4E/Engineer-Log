@@ -1,7 +1,7 @@
 # Distributed Locks
 
-**Domain:** distributed systems | locks | databases <br>
-**Tags:** #locks  <br>
+**Domain:** Databases & Messaging | distributed systems | locks | databases <br>
+**Tags:** #locks #Databases & #Messaging <br>
 **Last updated:** 2026-05-27 <br>
 
 ## What it is
