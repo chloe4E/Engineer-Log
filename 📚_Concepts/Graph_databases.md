@@ -21,4 +21,5 @@ Infrastructure problems, like IAM permissions, are **dependency problems** and a
   - **edges**: the relationship between the nodes | ex: `has_access_to`
   - **properties**: specific details about a node or edge | ex for a node: `status:active` | ex for a edge: `protocol:https`
 - when one queries a graph db we ask to **traverse** based on a starting node (traverse vs. search)
+- examples of graph db providers: Neo4j or Amazon Neptune
 
