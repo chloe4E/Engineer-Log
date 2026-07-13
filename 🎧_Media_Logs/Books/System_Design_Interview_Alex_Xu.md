@@ -1,7 +1,7 @@
 ## 1. Chapter 5: Design Consistent Hashing
 
 - traditional hashing can cause data distribution issues and reshuffling issue if the node count changes (leading to cache stampede)
-- Using a logical ring (consitstent hasing), addind or removing a (virtual) node just causes a 1/n (n=number of nodes) reshuffling
+- Using a logical ring (consistent hashing), adding or removing a (virtual) node just causes a 1/n (n=number of nodes) reshuffling
 - Using virtual nodes (server_a_1, server_b_1, server_a_2 etc...) supports uniform distribution and prevents hotspots
 
 How would you handle data replication on this hash ring to ensure that if a node goes down, its data isn't permanently lost?
