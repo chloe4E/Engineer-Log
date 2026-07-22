@@ -12,3 +12,13 @@ How would you handle data replication on this hash ring to ensure that if a node
 
 Other points:
 - The Quorum Rule ($R + W > N$): Ensuring your read quorum plus your write quorum is strictly greater than your replication factor mathematically guarantees that your read and write operations overlap on at least one node.
+
+
+## 2. Chapter 4: Design A Rate Limiter
+- What is a rate limiter? a system which limits the number of client requests over a specific period
+- Why use a rate limiter? to prevent resource starvation (like DoS) and prevent server overload.
+- Where is it implemented? it can be implemented on the client or on the server side. It can also be implemented as a middleware.
+- How does it work? rate limiters use an algorithm to accept/refuse clients request. Some of the most common algorithms are: token bucket, leaking bucket, fixed window counter, sliding window counters...
+- How is it implemented? on what does it throttle? You can define the rate limiting rules based on your service needs (ex: per endpoint, per client, per ip, per day, per second etc.)
+- Note that because of speed, usually we use an in-cache memory service for rate limiting storage (like Redis for example)
+- You can have hard or soft rate limiting thresholds.
